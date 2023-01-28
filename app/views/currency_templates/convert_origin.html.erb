@@ -1,0 +1,11 @@
+<h1> Convert <%= @origin_curr %> </h1>
+
+Go <a href= "/forex"> back</a>.
+
+<ul>
+<% @symbols_keys.each do |destination| %>
+<li>
+  <a href="/forex/<%= @origin_curr %>/<%= destination %>" >Convert 1 <%= @origin_curr %> to <%= destination %>
+</li>
+<% end%>
+</ul>

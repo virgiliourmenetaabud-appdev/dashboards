@@ -1,0 +1,11 @@
+<h1>Currency pairs</h1>
+
+Go <a href= "/"> back</a>.
+
+<ul>
+<% @symbols_keys.each do |currency| %>
+  <li>
+    <a href="/forex/<%=currency%>">Convert 1 <%= currency %> to...</a>
+  </li>
+<% end %>
+</ul>
